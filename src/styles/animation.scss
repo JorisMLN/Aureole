@@ -1,0 +1,36 @@
+@keyframes testAnimWater {
+	0.0%  { transform: translate(10px, 6px) rotate(0deg); }
+	12.0% { transform: translate(10px, 6px) rotate(0deg); }
+	12.9% { transform: translate(6px, 5px) rotate(0deg); }
+	14.4% { transform: translate(4px, 1px) rotate(0deg); }
+	15.9% { transform: translate(0px, 18px) rotate(0deg); }
+	18.0% { transform: translate(-1px, 2px) rotate(0deg); }
+	20.7% { transform: translate(3px, -10px) rotate(0deg); }
+	24.3% { transform: translate(3px, -12px) rotate(0deg); }
+	26.1% { transform: translate(0px, 10px) rotate(0deg); }
+	29.1% { transform: translate(-2px, -29px) rotate(0deg); }
+	31.5% { transform: translate(-4px, -38px) rotate(0deg); }
+	34.5% { transform: translate(-6px, -38px) rotate(0deg); }
+	36.3% { transform: translate(0px, -51px) rotate(0deg); }
+	39.6% { transform: translate(20px, -21px) rotate(0deg); }
+	42.3% { transform: translate(33px, -19px) rotate(0deg); }
+	43.8% { transform: translate(33px, -18px) rotate(0deg); }
+	44.1% { transform: translate(37px, -7px) rotate(0deg); }
+	44.4% { transform: translate(36px, -15px) rotate(0deg); }
+	44.7% { transform: translate(36px, -39px) rotate(0deg); }
+	45.0% { transform: translate(36px, -39px) rotate(0deg); }
+	45.3% { transform: translate(42px, -88px) rotate(40deg); }
+	45.6% { transform: translate(52px, -93px) rotate(80deg); }
+	45.9% { transform: translate(118px, -63px) rotate(141deg); }
+	46.2% { transform: translate(133px, -33px) rotate(164deg); }
+	46.5% { transform: translate(136px, -23px) rotate(170deg); }
+	46.8% { transform: translate(144px, 39px) rotate(166deg); }
+	47.1% { transform: translate(152px, 73px) rotate(166deg); }
+	47.4% { transform: translate(177px, 97px) rotate(146deg); }
+	47.7% { transform: translate(202px, 116px) rotate(113deg); }
+	48.0% { transform: translate(224px, 131px) rotate(113deg); }
+	48.3% { transform: translate(235px, 131px) rotate(113deg); }
+	48.6% { transform: translate(246px, 133px) rotate(113deg); }
+	48.9% { transform: translate(244px, 131px) rotate(113deg); }
+	100%  { transform: translate(244px, 131px) rotate(113deg); }
+}
