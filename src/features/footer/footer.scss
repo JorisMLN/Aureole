@@ -1,4 +1,6 @@
+@import './../../styles/variables.scss';
+
 .footer{
-  background-color: rgb(156, 166, 209);
+  background-color: $primary;
   height: 30vh;
 }

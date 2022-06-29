@@ -1,4 +1,6 @@
+@import './../../styles/variables.scss';
+
 .header{
-  background-color: rgb(191, 134, 134);
+  background-color: $primary;
   height: 10vh;
 }
