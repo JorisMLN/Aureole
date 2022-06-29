@@ -1,6 +1,12 @@
 @import './../../styles/variables.scss';
 
 .header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: $primary;
   height: 10vh;
+  &__link{
+    margin: 10px;
+  }
 }

@@ -4,7 +4,7 @@ import './content.scss'
 const ContentOne : React.FC = () => {
   return(
     <>
-      <div className="contentOne">
+      <div id="contentOne" className="contentOne">
         {/* <img src="src/assets/contentOne.jpg"></img> */}
       </div>
     </>

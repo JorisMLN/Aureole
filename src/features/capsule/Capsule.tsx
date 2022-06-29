@@ -13,10 +13,12 @@ const Capsule = () => {
       <div className='capsule'>
         <Header />
 
-        <SubCapsule child={<ContentOne />}/>
-        <SubCapsule child={<ContentTwo />}/>
-        <SubCapsule child={<ContentThree />}/>
-        <SubCapsule child={<ContentFour />}/>
+        <div className='capsule__container'>
+          <SubCapsule child={<ContentOne />}/>
+          <SubCapsule child={<ContentTwo />}/>
+          <SubCapsule child={<ContentThree />}/>
+          <SubCapsule child={<ContentFour />}/>
+        </div>
 
         <Footer />
       </div>

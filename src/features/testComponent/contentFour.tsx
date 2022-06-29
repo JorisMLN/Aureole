@@ -3,7 +3,7 @@ import React from "react";
 const ContentFour : React.FC = () => {
   return(
     <>
-      <div className="contentFour">
+      <div id="contentFour" className="contentFour">
       </div>
     </>
   )
