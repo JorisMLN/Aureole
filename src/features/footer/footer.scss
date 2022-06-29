@@ -1,6 +1,11 @@
 @import './../../styles/variables.scss';
 
 .footer{
-  background-color: $primary;
+  background-color: $footerMain;
+  color: $footerText;
   height: 40vh;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
