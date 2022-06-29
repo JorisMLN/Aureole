@@ -1,7 +1,10 @@
+import React from 'react';
 import './header.scss';
-import logo from './../../assets/logo.png'
+import logo from './../../assets/logo.png';
+import kart from './../../assets/kartcolor.png';
 
-const Header = () => {
+
+const Header : React.FC = () => {
   return(
     <>
       <div className='header'>
@@ -10,8 +13,8 @@ const Header = () => {
         <img className='header__logo' src={logo}></img>
         <a className='header__link' href="#contentThree">content Three</a>
         <a className='header__link' href="#contentFour">content Four</a>
-      </div>
-      
+        <img className='header__kart' src={kart}></img>
+      </div> 
     </>
   )
 }
