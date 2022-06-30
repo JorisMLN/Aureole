@@ -1,4 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import { useDispatch } from "react-redux";
+import { setKart } from '../../store';
+
 import './header.scss';
 import logo from './../../assets/logo.png';
 import kart from './../../assets/kartcolor.png';
@@ -7,6 +10,7 @@ import arrivalSmoke from './../../assets/arrivalSmoke.png';
 
 
 const Header : React.FC = () => {
+  const dispatch = useDispatch();
 
   const kartAnimManagement = () => {
     const kartIcon : HTMLElement | null = document.getElementById('kart');
@@ -26,6 +30,8 @@ const Header : React.FC = () => {
     contentFourLink?.classList.add('contentDodge1');
     contentTwoLink?.classList.add('contentDodge4');
     contentThreeLink?.classList.add('contentDodge2');
+    
+    dispatch(setKart(true));
     
     const removeAnimTag = () => {
       kartIcon?.classList.remove('animKart');
