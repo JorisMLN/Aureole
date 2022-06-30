@@ -12,31 +12,30 @@ const Header : React.FC = () => {
     const kartIcon : HTMLElement | null = document.getElementById('kart');
     const startSmokeIcon : HTMLElement | null = document.getElementById('startSmoke');
     const arrivalSmokeIcon : HTMLElement | null = document.getElementById('arrivalSmoke');
-    const contentOne : HTMLElement | null = document.getElementById('contentOne');
-    const contentTwo : HTMLElement | null = document.getElementById('contentTwo');
-    const contentThree : HTMLElement | null = document.getElementById('contentThree');
-    const contentFour : HTMLElement | null = document.getElementById('contentFour');
+    const contentOneLink : HTMLElement | null = document.getElementById('contentOneLink');
+    const contentTwoLink : HTMLElement | null = document.getElementById('contentTwoLink');
+    const contentThreeLink : HTMLElement | null = document.getElementById('contentThreeLink');
+    const contentFourLink : HTMLElement | null = document.getElementById('contentFourLink');
     const logo : HTMLElement | null = document.getElementById('logo');
     
     kartIcon?.classList.add('animKart');
     startSmokeIcon?.classList.add('animStartSmoke');
     arrivalSmokeIcon?.classList.add('animArrivalSmoke');
-    contentOne?.classList.add('contentDodge5');
+    contentOneLink?.classList.add('contentDodge5');
     logo?.classList.add('contentDodge3');
-    contentFour?.classList.add('contentDodge1');
-    contentTwo?.classList.add('contentDodge4');
-    contentThree?.classList.add('contentDodge2');
+    contentFourLink?.classList.add('contentDodge1');
+    contentTwoLink?.classList.add('contentDodge4');
+    contentThreeLink?.classList.add('contentDodge2');
     
     const removeAnimTag = () => {
       kartIcon?.classList.remove('animKart');
       startSmokeIcon?.classList.remove('animStartSmoke');
       arrivalSmokeIcon?.classList.remove('animArrivalSmoke');
-
-      contentOne?.classList.remove('contentDodge5');
-      contentTwo?.classList.remove('contentDodge4');
+      contentOneLink?.classList.remove('contentDodge5');
+      contentTwoLink?.classList.remove('contentDodge4');
       logo?.classList.remove('contentDodge3');
-      contentThree?.classList.remove('contentDodge2');
-      contentFour?.classList.remove('contentDodge1');
+      contentThreeLink?.classList.remove('contentDodge2');
+      contentFourLink?.classList.remove('contentDodge1');
     }
 
     setTimeout(removeAnimTag, 4900);
@@ -45,13 +44,13 @@ const Header : React.FC = () => {
   return(
     <>
       <div className='header'>
-        <a id='contentOne' className='header__link' href="#contentOne">content One</a>
-        <a id='contentTwo' className='header__link' href="#contentTwo">content Two</a>
+        <a id='contentOneLink' className='header__link' href="#contentOne">content One</a>
+        <a id='contentTwoLink' className='header__link' href="#contentTwo">content Two</a>
 
         <img id='logo' className='header__logo' src={logo}></img>
 
-        <a id='contentThree' className='header__link' href="#contentThree">content Three</a>
-        <a id='contentFour' className='header__link' href="#contentFour">content Four</a>
+        <a id='contentThreeLink' className='header__link' href="#contentThree">content Three</a>
+        <a id='contentFourLink' className='header__link' href="#contentFour">content Four</a>
 
         <img id='kart' className='header__kart' src={kart} onClick={kartAnimManagement}></img>
         <img id='startSmoke' src={startSmoke}></img>
