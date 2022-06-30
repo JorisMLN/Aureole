@@ -24,22 +24,48 @@
     width: 60px;
     position: absolute;
     right: 40px;
-
-    &:hover{
-      animation: kart 4000ms both;
-      animation-timing-function: cubic-bezier(.34,.08,.2,.99);
-    }
-
-    &:hover + #startSmoke {
-      animation: startSmoke 1000ms;
-      animation-timing-function: cubic-bezier(.34,.08,.2,.99);
-    }
-
-    &:hover + #arrivalSmoke {
-      animation: arrivalSmoke 1000ms 3900ms;
-      animation-timing-function: cubic-bezier(.34,.08,.2,.99);
-    }
   }
+
+  .animKart{
+    animation: kart 4000ms both;
+    animation-timing-function: cubic-bezier(.34,.08,.2,.99);
+  }
+
+  .animStartSmoke{
+    animation: startSmoke 1000ms;
+    animation-timing-function: cubic-bezier(.34,.08,.2,.99);
+  }
+
+  .animArrivalSmoke{
+    animation: arrivalSmoke 1000ms 3900ms;
+    animation-timing-function: cubic-bezier(.34,.08,.2,.99);
+  }
+
+  .contentDodge1{
+    animation: contentDodge 1500ms 220ms;
+    animation-timing-function: cubic-bezier(.34,.08,.2,.99);
+  }
+
+  .contentDodge2{
+    animation: contentDodge 1500ms 250ms;
+    animation-timing-function: cubic-bezier(.34,.08,.2,.99);
+  }
+
+  .contentDodge3{
+    animation: contentDodge 1500ms 300ms;
+    animation-timing-function: cubic-bezier(.34,.08,.2,.99);
+  }
+
+  .contentDodge4{
+    animation: contentDodge 1500ms 340ms;
+    animation-timing-function: cubic-bezier(.34,.08,.2,.99);
+  }
+
+  .contentDodge5{
+    animation: contentDodge 1500ms 380ms;
+    animation-timing-function: cubic-bezier(.34,.08,.2,.99);
+  }
+
 
   #startSmoke{
     opacity: 0;
@@ -51,7 +77,6 @@
   }
 
   #arrivalSmoke{
-    // border: 2px solid red;
     opacity: 0;
     z-index: 1;
     width: 60px;
@@ -61,6 +86,7 @@
   }
 }
 
+// - - - - - - - - - KEYFRAMES - - - - - - - - - //
 @keyframes kart {
   from{
     transform: translateX(0px) rotate(0turn);
@@ -97,7 +123,6 @@
   }
 }
 
-
 @keyframes startSmoke {
  0%{
   transform: translateX(0px);
@@ -128,4 +153,18 @@
     transform: translateX(-80px) translateY(-20px);
     opacity: 0;
    }
+}
+
+@keyframes contentDodge {
+  0%{
+    transform: translateY(0px);
+  }
+  
+   50%{
+    transform: translateY(-80px)
+  }
+  
+   100%{
+    transform: translateY(0px)
+  }
 }
