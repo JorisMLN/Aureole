@@ -7,23 +7,40 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  // overflow-y: hidden;
 }
 
 .capsule{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: $tertiary;
-  height: 300vh;
-  // height: 3000px;
+  background-color: white;
+
   &__container{
-    // border: 1px solid red;
     height: 260vh;
-    // height: 260%;
-    // z-index: 1;
-    // overflow: scroll;
-    // scrollbar-color: $primary $secondary;
-    // scrollbar-width: thin;
+  }
+
+  &__kart{
+    margin-top: 95px;
+    height: 64vh;
+    opacity: 0;
+  }
+
+  .kartVisible{
+    opacity: 1;
+  }
+
+  .containerKartAnim{
+    animation: containerKartAnim 1500ms 380ms;
+    animation-timing-function: cubic-bezier(.34,.08,.2,.99);
+  }
+}
+
+@keyframes containerKartAnim {
+  from{
+    opacity: 0;
+  }
+
+  to{
+    opacity: 1;
   }
 }

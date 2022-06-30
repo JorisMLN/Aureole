@@ -8,7 +8,7 @@ const initialState = {
 
 // Actions --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- //
 
-export const openKart = (newState) => ({
+export const setKart = (newState) => ({
   type: "setKart",
   payload: newState
 })
