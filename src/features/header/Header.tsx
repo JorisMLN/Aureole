@@ -7,8 +7,8 @@ import arrivalSmoke from './../../assets/arrivalSmoke.png';
 
 
 const Header : React.FC = () => {
-  const kartAnimManagement = (e: any) => {
 
+  const kartAnimManagement = () => {
     const kartIcon : HTMLElement | null = document.getElementById('kart');
     const startSmokeIcon : HTMLElement | null = document.getElementById('startSmoke');
     const arrivalSmokeIcon : HTMLElement | null = document.getElementById('arrivalSmoke');
@@ -17,25 +17,16 @@ const Header : React.FC = () => {
     const contentThree : HTMLElement | null = document.getElementById('contentThree');
     const contentFour : HTMLElement | null = document.getElementById('contentFour');
     const logo : HTMLElement | null = document.getElementById('logo');
-
-    if(kartIcon?.classList.contains('animKart')){
-      console.log('testreplace');
-      kartIcon?.classList.replace('animKart', 'animKart');
-      startSmokeIcon?.classList.replace('animStartSmoke', 'animStartSmoke');
-      arrivalSmokeIcon?.classList.replace('animArrivalSmoke', 'animArrivalSmoke');
-    } else {
-      console.log('just add');
-      kartIcon?.classList.add('animKart');
-      startSmokeIcon?.classList.add('animStartSmoke');
-      arrivalSmokeIcon?.classList.add('animArrivalSmoke');
-
-      contentOne?.classList.add('contentDodge5');
-      logo?.classList.add('contentDodge3');
-      contentFour?.classList.add('contentDodge1');
-      contentTwo?.classList.add('contentDodge4');
-      contentThree?.classList.add('contentDodge2');
-    }
-
+    
+    kartIcon?.classList.add('animKart');
+    startSmokeIcon?.classList.add('animStartSmoke');
+    arrivalSmokeIcon?.classList.add('animArrivalSmoke');
+    contentOne?.classList.add('contentDodge5');
+    logo?.classList.add('contentDodge3');
+    contentFour?.classList.add('contentDodge1');
+    contentTwo?.classList.add('contentDodge4');
+    contentThree?.classList.add('contentDodge2');
+    
     const removeAnimTag = () => {
       kartIcon?.classList.remove('animKart');
       startSmokeIcon?.classList.remove('animStartSmoke');
