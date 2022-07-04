@@ -44,8 +44,22 @@
     top: 10px;
   }
 
+  #policeCar{
+    opacity: 1;
+    z-index: 1;
+    width: 60px;
+    position: absolute;
+    right: -100px;
+    top: 10px;
+  }
+
   .animKart{
     animation: kart 4000ms both;
+    animation-timing-function: cubic-bezier(.34,.08,.2,.99);
+  }
+
+  .animPoliceCar{
+    animation: policeCar 4000ms 300ms both;
     animation-timing-function: cubic-bezier(.34,.08,.2,.99);
   }
 
@@ -119,6 +133,16 @@
   }
   to{
     transform: rotate(0turn);
+  }
+}
+
+@keyframes policeCar {
+  from{
+    transform: translateX(0px);
+  }
+  
+  to{
+    transform: translateX(-2200px);
   }
 }
 

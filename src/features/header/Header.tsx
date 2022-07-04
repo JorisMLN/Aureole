@@ -5,6 +5,7 @@ import { setKart } from '../../store';
 import './header.scss';
 import logo from './../../assets/logo.png';
 import kart from './../../assets/kartcolor.png';
+import policeCar from './../../assets/policeCar.png';
 import startSmoke from './../../assets/startSmoke3.png';
 import arrivalSmoke from './../../assets/arrivalSmoke.png';
 
@@ -14,6 +15,7 @@ const Header : React.FC = () => {
 
   const kartAnimManagement = () => {
     const kartIcon : HTMLElement | null = document.getElementById('kart');
+    const policeCar : HTMLElement | null = document.getElementById('policeCar');
     const startSmokeIcon : HTMLElement | null = document.getElementById('startSmoke');
     const arrivalSmokeIcon : HTMLElement | null = document.getElementById('arrivalSmoke');
     const contentOneLink : HTMLElement | null = document.getElementById('contentOneLink');
@@ -23,6 +25,7 @@ const Header : React.FC = () => {
     const logo : HTMLElement | null = document.getElementById('logo');
     
     kartIcon?.classList.add('animKart');
+    policeCar?.classList.add('animPoliceCar');
     startSmokeIcon?.classList.add('animStartSmoke');
     arrivalSmokeIcon?.classList.add('animArrivalSmoke');
     contentOneLink?.classList.add('contentDodge5');
@@ -35,6 +38,7 @@ const Header : React.FC = () => {
     
     const removeAnimTag = () => {
       kartIcon?.classList.remove('animKart');
+      policeCar?.classList.remove('animPoliceCar');
       startSmokeIcon?.classList.remove('animStartSmoke');
       arrivalSmokeIcon?.classList.remove('animArrivalSmoke');
       contentOneLink?.classList.remove('contentDodge5');
@@ -59,6 +63,7 @@ const Header : React.FC = () => {
         <a id='contentFourLink' className='header__link' href="#contentFour">content Four</a>
 
         <img id='kart' className='header__kart' src={kart} onClick={kartAnimManagement}></img>
+        <img id='policeCar' className='header__policeCar' src={policeCar}></img>
         <img id='startSmoke' src={startSmoke}></img>
         <img id='arrivalSmoke' src={arrivalSmoke}></img>
       </div> 
