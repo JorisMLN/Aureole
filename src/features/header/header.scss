@@ -64,7 +64,7 @@
   }
 
   .animStartSmoke{
-    animation: startSmoke 1000ms;
+    animation: startSmoke 1000ms 300ms;
     animation-timing-function: cubic-bezier(.34,.08,.2,.99);
   }
 
